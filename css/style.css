@@ -44,14 +44,48 @@
     font-weight: 700 !important;
 }
 
+/*** Back to Top Button ***/
 .back-to-top {
     position: fixed;
     display: none;
     left: 45px;
     bottom: 45px;
     z-index: 99;
+    width: 48px;
+    height: 48px;
 }
 
+.back-to-top.btn {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top i {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure the hover effect applies to the entire button */
+.back-to-top:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Make sure the icon remains centered and visible */
+.back-to-top:hover i {
+    color: #FFFFFF;
+}
+
+/* Prevent any unwanted pointer events on the icon */
+.back-to-top i {
+    pointer-events: none;
+}
 
 /*** Spinner ***/
 #spinner {
