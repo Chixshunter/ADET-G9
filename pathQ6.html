@@ -20,16 +20,20 @@
         }
         .path-question {
             font-size: 35px;
-            text-align: center; /* Center the question */
+            text-align: center; 
             font-weight: bold;
         }
-        .card {
+        .path-card {
             background: transparent;
             border: none;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center;
+            width: 100%; 
         }
         .btn-custom {
-            width: 100%; /* Full width of the container */
+            width: 100%; 
             padding: 12px;
             font-size: 20px;
             font-weight: bold;
@@ -63,10 +67,10 @@
         .option-container {
             display: flex;
             flex-direction: column;
-            gap: 15px; /* Space between buttons */
-            max-width: 480px; /* Fixed width for the options container */
-            margin-top: 25px; /* Space between question and options */
-            width: 100%; /* Ensure the container takes full width */
+            gap: 15px; 
+            max-width: 480px;
+            margin-top: 25px; 
+            width: 100%;
             align-items: center;
         }
     </style>
@@ -80,7 +84,7 @@
 
         <!-- Main Content -->
         <div class="path-container">
-            <div class="card">
+            <div class="path-card">
                 <!-- Question -->
                 <h1 class="path-question">What are you here to learn?</h1>
                 <!-- Options Container -->

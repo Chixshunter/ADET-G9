@@ -23,10 +23,15 @@
             text-align: center; /* Center the question */
             font-weight: bold;
         }
-        .card {
+        /* Updated .path-card to retain layout */
+        .path-card {
             background: transparent;
             border: none;
-            align-items: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+            width: 100%; /* Ensure it takes full width */
         }
         .btn-custom {
             width: 100%; /* Full width of the container */
@@ -73,21 +78,22 @@
 </head>
 <body>
     <div class="path-bg">
-            <!-- Back Button -->
+        <!-- Back Button -->
         <a href="javascript:history.back()" class="back-button">
             <i class="fas fa-arrow-left"></i>
         </a>
 
         <!-- Main Content -->
         <div class="path-container">
-            <div class="card">
+            <!-- Updated class name from .card to .path-card -->
+            <div class="path-card">
                 <!-- Question -->
                 <h1 class="path-question">Do you have an experience in the tech field?</h1>
                 <!-- Options Container -->
                 <div class="option-container">
                     <button class="btn btn-custom btn-outline" onclick="window.location.href='pathQ2.html'">I have no experience</button>
                     <button class="btn btn-custom btn-outline" onclick="window.location.href='pathQ2.html'">I have some experience</button>
-                    <button class="btn btn-custom btn-outline" onclick="window.location.href='pathQ2.html'">I have a lot of experince</button>
+                    <button class="btn btn-custom btn-outline" onclick="window.location.href='pathQ2.html'">I have a lot of experience</button>
                 </div>
             </div>
         </div>
@@ -95,6 +101,5 @@
         <!-- Bootstrap JS (optional) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </div>
-
 </body>
 </html>
